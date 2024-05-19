@@ -1,9 +1,30 @@
+/* 手機板 */
 .nav {
+  border-bottom: 1px solid rgba(241, 241, 241, 1);
+}
+
+.nav-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(241, 241, 241, 1);
+  align-items: center;
   padding: 8px 12px;
+  max-width: 1296px;
+  margin: auto;
+}
+
+.nav-logo {
+  width: 74px;
+  height: 33px;
+}
+
+.nav-logo img {
+  width: 100%;
+}
+
+.page {
+  max-width: 1296px;
+  margin: auto;
 }
 
 .btn {
@@ -24,12 +45,6 @@
   justify-content: center;
 }
 
-.sub{
-    color: rgba(145, 145, 145, 1);
-    font-weight: 400;
-    margin-top: 16px;
-}
-
 .dot {
   background: rgba(193, 193, 193, 1);
   width: 6px;
@@ -39,14 +54,20 @@
 
 .line {
   background: rgba(193, 193, 193, 1);
-  width: 94px;
+  width: 50px;
   height: 1px;
 }
 
 h1 {
   margin: 0 16px;
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sub {
+  color: rgba(145, 145, 145, 1);
+  font-weight: 400;
+  margin-top: 16px;
 }
 
 button {
@@ -59,6 +80,11 @@ button {
   gap: 32px;
   font-size: 16px;
 }
+
+.card {
+  margin-bottom: 40px;
+}
+
 .card-title {
   display: flex;
   justify-content: space-between;
@@ -66,38 +92,32 @@ button {
   padding: 0 8px;
   margin-bottom: 16px;
   margin-top: 16px;
-  
 }
 
-.card-text{
+.card-text {
   padding: 0 8px;
 }
 
-
-.card-text h3{
-    margin-bottom: 12px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: rgba(59, 59, 59, 1);
-
-
+.card-text h3 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(59, 59, 59, 1);
 }
 
-.card-text p{
+.card-text p {
   line-height: 24px;
 }
 
-
-
 .p-text {
-  
   font-size: 16px;
   line-height: 24px;
   border-radius: 16px;
   background-color: rgba(241, 241, 241, 1);
   padding: 4px 12px;
 }
+
 .button-container {
   background: rgba(250, 250, 250, 1);
   padding: 24px 12px;
@@ -106,56 +126,69 @@ button {
   color: rgba(91, 91, 91, 1);
   overflow-x: scroll;
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
-.button-container::-webkit-scrollbar { /* WebKit 瀏覽器 (Chrome, Safari) */
-    display: none;
+.button-container::-webkit-scrollbar {
+  /* WebKit 瀏覽器 (Chrome, Safari) */
+  display: none;
 }
+
 /* 背景色透明 */
 .btn {
   background: transparent;
   flex-shrink: 0; /*flex子元件不可被壓縮*/
 }
 
+.hug {
+  background: transparent;
+}
 
-.list{
+.nav-list {
+  display: none;
+}
+
+/* list */
+.list {
   padding: 40px 34px;
 }
 
-
-.pic{
-    width: 100%;
-    border-radius: 8px;
-    /* 超出畫面就會隱藏 */
-    overflow: hidden;      
-    
-
+.pic {
+  width: 100%;
+  border-radius: 8px;
+  /* 超出畫面就會隱藏 */
+  overflow: hidden;
 }
-.pic img{
-   width: 100%;
-    object-fit: cover;    /*防止圖片被壓縮*/
-} 
+.pic img {
+  width: 100%;
+  object-fit: cover; /*防止圖片被壓縮*/
+}
 
-.card5-text{
+.card5-text {
   margin-bottom: 80px;
 }
 
+/* pc-menu */
+.pc-menu {
+  display: none;
+}
 
-
-
-
-.footer-pic{
-  
-  height: 54px;
-  display: flex;
-  justify-content: center;
+/* footer */
+.footer {
+  background: rgba(250, 250, 250, 1);
+}
+.footer-content {
+  padding: 40px 34px;
+}
+.footer-pic {
+  /* height: 54px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
   padding-bottom: 24px;
 }
 
-
-.footer-caption h2{
+.footer-caption h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -164,31 +197,28 @@ button {
   line-height: 24px;
 }
 
-
-.footer-caption a{
+.footer-caption a {
   display: flex;
   justify-content: center;
   color: rgba(145, 145, 145, 1);
   margin-top: 24px;
 }
 
-.footer-btn{
+.footer-btn {
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: sans-serif;
 }
 
-
-
-.footer-btn1{
+.footer-btn1 {
   border: 1px solid;
   border-radius: 8px;
   background: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
   display: flex;
   align-items: center;
-  padding:4px 24px 4px 24px ;
+  padding: 4px 24px 4px 24px;
   width: 306px;
   height: 64px;
   margin-top: 40px;
@@ -198,41 +228,163 @@ button {
   line-height: 30px;
 }
 
-
-.footer-btn2{
+.footer-btn2 {
   border: 1px solid rgba(193, 193, 193, 1);
   border-radius: 8px;
   display: flex;
   align-items: center;
   width: 306px;
   height: 64px;
-  margin-top: 40px;
+  margin-top: 24px;
   font-size: 20px;
   line-height: 30px;
-  gap: 8px ;
+  gap: 8px;
   padding-left: 26px;
 }
 
-
-.footer-btn3{
+.footer-btn3 {
   border: 1px solid rgba(193, 193, 193, 1);
   border-radius: 8px;
   display: flex;
   align-items: center;
   width: 306px;
   height: 64px;
-  margin-top: 40px;
+  margin-top: 24px;
   font-size: 20px;
   line-height: 30px;
-  gap: 8px ;
+  gap: 8px;
   padding-left: 26px;
 }
 
-
-
-/* 桌機版樣式 >768px 就會消失*/
+/* 桌機版樣式 >768px */
 @media screen and (min-width: 768px) {
-  .button-container{
+  .nav-logo {
+    width: 90px;
+    height: 40px;
+  }
+
+  .nav-list {
+    display: flex;
+    margin: auto;
+    gap: 40px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .nav-item {
+    font-size: 16px;
+    line-height: 24px;
+    flex-shrink: 0;
+  }
+
+  .hug {
     display: none;
+  }
+
+  /* title */
+  .line {
+    width: 94px;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  /* container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    width: 100%;
+    gap: 64px;
+  }
+
+  .card .pic {
+    min-width: 40%;
+    width: 40%;
+    height: 100%;
+  }
+  .card .pic img {
+    height: 100%;
+  }
+
+  .card-content {
+    flex-grow: 1;
+  }
+}
+
+/* 桌機版樣式 > 1024px */
+@media screen and (min-width: 1024px) {
+  /*手機板選單在螢幕寬度<1024px 就會消失*/
+  .button-container {
+    display: none;
+  }
+
+  /* pc-menu */
+  .pc-menu {
+    display: block;
+    background: rgba(250, 250, 250, 1);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 306px;
+    gap: 32px;
+    padding: 0 80px;
+    padding-top: 80px;
+  }
+
+  .pc-btn {
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(91, 91, 91, 1);
+    background: transparent;
+    display: inline-block;
+    margin-bottom: 32px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+  }
+
+  .pc-btn:hover {
+    color: rgba(30, 30, 30, 1);
+    border-bottom: 2px solid rgba(30, 30, 30, 1);
+  }
+
+  .pc-btn-active {
+    color: rgba(30, 30, 30, 1);
+    border-bottom: 2px solid rgba(30, 30, 30, 1);
+  }
+
+  .footer-content {
+    max-width: 1296px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+  }
+
+  .footer-pic {
+    text-align: left;
+  }
+
+  .footer-caption a {
+    justify-content: flex-start;
+  }
+
+  .footer-btn1 {
+    margin-top: 0;
   }
 }
